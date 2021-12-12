@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+
+<!-- Template driven forms -->
+<!-- 
+  <form #loginForm="ngForm" (ngSubmit)=getFormValues(loginForm.value)>
+    <input type="text" name="userName" ngModel>
+    <br/><br/>
+    <input type="password" name="password" ngModel>
+    <br/><br/>
+    <button>Sign In</button>
+  </form>
+
+  <br/><br/>
+  <button (click)=getFormValues(loginForm.value)>Outside Login</button> 
+-->
+
+<!-- Reactive forms -->
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" formControlName="email">
+  <br/>
+  <span *ngIf="validateEmail && validateEmail.invalid && validateEmail.touched" style="color: red;">please enter valid email</span>
+  <br/><br/>
+  <input type="password" formControlName="password">
+  <br/>
+  <span *ngIf="validatePassword && validatePassword.invalid && validatePassword.touched" style="color: red;">please enter valid password</span>
+  <br/>
+  <br/>
+  <button [disabled]="loginForm.invalid">Log In</button>
+</form>
