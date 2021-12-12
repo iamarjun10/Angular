@@ -1,0 +1,49 @@
+<!-- <button mat-raised-button (click)="openDialog()">Pick one</button>
+
+<br/>
+<br/>
+
+<button (click)="openModal(confirmDialogPopupTemplate)">Open my template</button>
+
+<ng-template #confirmDialogPopupTemplate>
+    <div>
+        <h2 mat-dialog-title class="mat-dialog-title" id="mat-dialog-title-0">Confirm Action</h2>
+        <div mat-dialog-content class="mat-dialog-content">
+            <p> Are you sure you want to delete this? </p>
+        </div>
+        <div mat-dialog-actions class="mat-dialog-actions">
+            <button mat-stroked-button class="mat-stroked-button-style" [mat-dialog-close]="false">No</button>
+            <button mat-raised-button class="mat-stroked-button-style" color="primary" [mat-dialog-close]="true">Yes</button>
+        </div>
+    </div>
+</ng-template> -->
+
+<br/><br/><br/><br/>
+<iazi-confirmation-button-material 
+[btnType]="'link'"
+[btnClass]="'dropdown-item'"
+
+[btnString]="'Delete Button'"
+[titleString]="'Confirm Action'"
+[contentString]="'Are you sure you want to delete this?'"
+[actionConfirmString]="'Yes'" 
+[actionCancelString]="'No'"
+(onConfirmed)="bulkDeleteElements()"
+>
+</iazi-confirmation-button-material>
+
+
+<br/><br/><br/><br/><br/>
+
+
+<iazi-image-input-field
+[btnType]="'link'"
+[btnClass]="'dropdown-item'"
+
+[btnString]="'image upload'"
+[titleString]="'Confirm Action'"
+[contentString]="'Are you sure you want to delete this?'"
+[actionConfirmString]="'Yes'" 
+[actionCancelString]="'No'"
+(onConfirmed)="bulkDeleteElements()"
+></iazi-image-input-field>

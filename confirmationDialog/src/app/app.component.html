@@ -1,0 +1,34 @@
+<div class="container" style="margin-left: 200px;margin-block: 200px;">
+    <h1>Hi, Confirmation dialog demo!</h1>
+    <div>
+        <button (click)="openConfirmDialog()">Delete</button>
+    </div>
+    <div>
+        <button (click)="unCheckAll()">Uncheck all</button>
+    </div>
+</div>
+
+<div>
+    <ul>
+        <li>
+            <input type="checkbox" [checked]="checkBoxValue" />
+            Check me1
+        </li>
+        <li>
+            <input type="checkbox" [checked]="checkBoxValue" />
+            Check me2
+        </li>
+        <li>
+            <input type="checkbox" [checked]="checkBoxValue" />
+            Check me3
+        </li>
+        <li>
+            <input type="checkbox" [checked]="checkBoxValue" />
+            Check me4
+        </li>
+        <li>
+            <input type="checkbox" [checked]="checkBoxValue" />
+            Check me5
+        </li>
+    </ul>
+</div>

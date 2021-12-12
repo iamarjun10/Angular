@@ -1,0 +1,81 @@
+<button [type]="btnType" class="btnClass" (click)="openModal(confirmDialogPopupTemplate)">{{ btnString }}</button>
+
+<ng-template #confirmDialogPopupTemplate>
+    <div>
+        <h2 mat-dialog-title class="mat-dialog-title" id="mat-dialog-title-0">{{ titleString }}</h2>
+        <div mat-dialog-content class="mat-dialog-content">
+            <p>{{ contentString }}</p>
+        </div>
+        <div mat-dialog-actions class="mat-dialog-actions">
+            <button mat-stroked-button class="mat-stroked-button-style" [mat-dialog-close]="false">{{ actionCancelString }}</button>
+            <button mat-raised-button class="mat-stroked-button-style" color="primary" [mat-dialog-close]="true">{{ actionConfirmString }}</button>
+        </div>
+    </div>
+</ng-template>
+
+
+<!-- Picture -->
+<!-- <ng-container >
+    <span class="input-group-btn top-align" *ngIf="hasCommentHistorySourceEnabled">
+      <div [class]="getSourceCss()" [tooltip]="(tooltipTexts[_data.sourceCode] || tooltipTexts['U']) | translate"></div>
+      <button type="button" class="btn btn-default" (click)="editComment()">
+        <i [class]="getCommentIcon()"></i>
+      </button>
+
+    </span>
+    <img [src]="getPictureUrl()" [class]="getCssHighlight('thumbnail picture-size-thumbnail')"
+      (error)="setPlaceholderImage($event)" [ngClass]="{'cursor-pointer': isEditable}"
+      (click)="openPictureUploader()" />
+
+    <span class="input-group-btn top-align" *ngIf="hasStatusVerificationEnabled">
+      <button type="button" class="btn btn-default" [disabled]="!isEditable && !isValidable"
+        (click)="setStatusCode(_data.statusCode)">
+        <i [className]="getStatusIcon(_data.statusCode)"></i>
+      </button>
+
+      <ng-container *ngIf="hasUpdateButton">
+        <button type="button" class="btn btn-default update-button" (click)="onUpdateRequest.emit()"
+          [disabled]="isUpdating || !isEditable">
+          <i class="fa" [ngClass]="{'fa-spinner fa-pulse': isUpdating, 'fa-refresh': !isUpdating}"></i>
+        </button>
+      </ng-container>
+
+    </span>
+  </ng-container> -->
+
+
+  <!-- <div bsModal #pictureUploaderModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+  aria-labelledby="inputEditorModal" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="pictureUploaderModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">{{ label }}</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <img [src]="getPictureUrl()" (error)="setPlaceholderImage($event)" class="picture-size"
+            [ngClass]="{'cursor-pointer': isEditable}" />
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span class="picture-delete" *ngIf="_data.value && _data.value.length > 0">
+          <a (click)="deleteSignature()">
+            <i class="fa fa-trash fa-lg" style="font-size: 1.33333333em;"></i>
+          </a>
+        </span>
+        <button type="button" (click)="pictureUploaderModal.hide()" class="btn btn-default">{{ 'Cancel' | translate
+          }}</button>
+
+        <label class="btn btn-primary" *ngIf="!isPictureUploading && documentsUploader"><i class="fa fa-paperclip"></i>
+          {{ 'Select picture' | translate }} <input type="file" multiple="false" name="picture" ng2FileSelect
+            [uploader]="documentsUploader.getUploader()" style="display:none" accept=".png,.jpg,.jpeg,.gif"></label>
+        <label class="btn btn-primary" *ngIf="isPictureUploading"><i class="fa fa-spinner fa-spin"></i> {{ 'Uploading
+          ...' | translate }}.</label>
+      </div>
+    </div>
+  </div>
+</div> -->

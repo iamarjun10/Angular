@@ -1,0 +1,67 @@
+{
+    "searchBox": {
+        "country": "Country",
+        "zip": "Zip",
+        "city": "City",
+        "region": "Region",
+        "address": "Address"
+    },
+    "is24ToolbarAndMenu": {
+        "close": "Close",
+        "signIn": "Sign in",
+        "menu": "Menu",
+        "marketAtlas": "Market Atlas",
+        "marketAtlasLocationOverview": "Location Overview",
+        "marketAtlasLocationAnalysis": "Location Analysis",
+        "marketAtlasPrice": "Price",
+        "marketAtlasDemand": "Demand",
+        "marketAtlasSupply": "Supply",
+        "search": "Search",
+        "searchPropertiesForRent": "Properties for rent",
+        "searchPropertiesForSale": "Properties for sale",
+        "searchNewBuildingProjects": "New building projects",
+        "sell": "Sell",
+        "sellAllSalesOptions": "All sales options",
+        "sellRealEstateAppraisal": "Real estate appraisal",
+        "sellCreateAnAd": "Create an ad",
+        "sellSellWithAnEstateAgent": "Sell with an estate agent",
+        "sellNewBuildingProjects": "New building projects",
+        "rentOut": "Rent Out",
+        "rentCreateAnAd": "Create an ad",
+        "rentNewBuildingProjects": "New building projects",
+        "mortgages": "Mortgages",
+        "mortgagesBuyingAndFinancing": "Buying and financing",
+        "mortgagesCalculateYourMortgage": "Calculate your mortgage",
+        "mortgagesPurchasePlanner": "Purchase planner",
+        "moving": "Moving",
+        "movingMoveAndFinalCleaning": "Move and final cleaning",
+        "movingCalculateTheMovingCosts": "Calculate the moving costs"
+    },
+    "postFinanceToolbarAndMenu": {
+        "postFinanceBusinessCustomers": "Business Customers",
+        "postFinancePrivateCustomers": "Private Customers",
+        "postFinanceOurProducts": "Our Products",
+        "postFinanceContactAndSupport": "Contact and support"
+    },
+    "bkbToolbarAndMenu": {
+        "bkbPrivateCustomers": "Private customers",
+        "bkbBusinessCustomers": "Business customers",
+        "bkbBankBkb": "Bank BKB"
+    },
+    "clerToolbarAndMenu": {
+        "clerPrivateCustomers": "Private customers",
+        "clerBusinessCustomers": "Business customers",
+        "clerBankCler": "Bank Cler"
+    },
+    "iaziToolbarAndMenu": {
+        "iaziOnlineValuation": "Online Valuation",
+        "iaziConsultation": "Consultation",
+        "iaziPropertyIndices": "Property Indices"
+    },
+    "kpiCards": {
+        "kpiAdvertisements": "Advertisements",
+        "kpiCHF": "CHF pro m²",
+        "kpiPopulation": "Population",
+        "kpiVacancy": "Vacancy"
+    }
+}

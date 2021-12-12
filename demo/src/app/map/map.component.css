@@ -1,0 +1,10 @@
+
+ #googleMap {
+    height: 600px;
+    width: 600px;
+}
+.expanded-width{
+  
+    width:calc(100vw - 25vw);
+}
+

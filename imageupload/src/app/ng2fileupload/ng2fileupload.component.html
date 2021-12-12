@@ -1,0 +1,38 @@
+
+    <div>
+        <button mat-flat-button
+            color="primary" class="btn btn-primary">
+            <i class="fa fa-paperclip"></i>
+                Select picture 
+                <input type="file" 
+                 
+                name="picture" 
+                ng2FileSelect
+                [uploader]="uploader" 
+                style="display:none" 
+                accept=".png,.jpg,.jpeg,.gif">
+        </button>
+    </div>
+    <input type="file" 
+                 
+                name="picture" 
+                ng2FileSelect
+                [uploader]="uploader"  
+                accept=".png,.jpg,.jpeg,.gif">
+    <div>
+        <h3>helllo</h3>
+        <button mat-flat-button
+        color="primary" class="btn btn-primary">
+            <input type="file"
+            name="picture" ng2FileSelect [uploader]="uploader" />
+        </button>
+            <!-- <img [src]="previews" class="preview" /> -->
+    </div>
+    <div *ngFor="let item of uploader.queue;">
+        <img [src] = "item"/>
+    </div>
+
+    <button >
+        
+    </button>
+

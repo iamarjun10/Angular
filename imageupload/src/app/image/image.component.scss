@@ -1,0 +1,18 @@
+.preview {
+    max-height: 400px;
+    max-width: 800px;
+    scroll-behavior: none;
+    vertical-align: middle;
+}
+.close-button {
+    float: right;
+    text-align: right;
+}
+.mat-dialog-title {
+  margin: 0 0 20px;
+  display: initial;
+}
+.content-size {
+  width: 650px; 
+  height: 400px;
+}

@@ -1,0 +1,63 @@
+<p>currency works!</p>
+
+<h4>{{ 2434 | currency: 'EUR': 'code' }}</h4>
+
+<div *ngFor="let item of countries | keyvalue">
+    <h1>{{ item.key }}</h1>
+</div>
+
+<!-- <br><br>
+
+<form>
+    <mat-form-field >
+      <mat-select #matCurrencyCode (selectionChange)="optionSelected(matCurrencyCode.value)">
+        <mat-option *ngFor="let item of countries | keyvalue" [value]="item.key" >
+          {{item.key}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <input #currencyField
+        type="text"
+        [value]="price | currency: selectedCurrency: 'code'"
+        matInput
+        onchange="updateCurrencyValue(currencyField.value)"
+        class="iazi-input">
+  </form>
+
+  <br><br><br>
+  <h4>{{ selectedCurrency }}</h4> -->
+
+  <!-- <div class="time-picker-component">
+    <mat-form-field appearance="fill">
+        <mat-label>End Time</mat-label>
+        <input matInput class="input-style" type="text" placeholder="currency" >
+        <mat-select name="ampm" matPrefix class="mat-select">
+          <mat-option value="AM">AM</mat-option>
+          <mat-option value="PM">PM</mat-option>
+     </mat-select>
+   </mat-form-field>
+</div> -->
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Telephone number</mat-label>
+    <input type="checkbox" matSuffix>
+    <input type="tel" matInput placeholder="555-555-1234">
+  </mat-form-field>
+</form>
+
+
+<!-- 
+  <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Telephone</mat-label>
+    <mat-select #matCurrencyCode matPrefix (selectionChange)="optionSelected(matCurrencyCode.value)">
+      <mat-option *ngFor="let item of countries | keyvalue" [value]="item.key" >
+        {{item.key}}
+      </mat-option>
+    </mat-select>
+    <input type="tel" matInput placeholder="555-555-1234">
+    
+  </mat-form-field>
+</form>
+ -->

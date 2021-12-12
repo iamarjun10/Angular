@@ -1,0 +1,52 @@
+<!-- <mat-dialog-content>
+    {{message}}
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+    <button mat-raised-button color="primary" mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+</mat-dialog-actions> -->
+
+<!-- <div>
+  <h1 mat-dialog-title></h1>
+  <div mat-dialog-content>
+    <p>Are you sure you want to delete this?</p>
+  </div>
+  <div mat-dialog-actions align="end"  class="text-align-right">
+    <div class="footer-seperator">&nbsp;</div>
+    <button mat-dialog-close>Cancel</button>
+    <button mat-dialog-close>Confirm</button>
+  </div>
+</div> -->
+
+
+<!-- <div>
+  <div class="content-container">
+    <mat-icon id="close-icon">close</mat-icon>
+    <span class="content-span full-width">Are you sure you want to delete this?</span>
+  </div>
+  <button mat-flat-button id="no-button">NO</button>
+  <button mat-flat-button id="yes-button">YES</button>
+</div> -->
+
+<!-- <mat-dialog-content>
+	<p>
+		{{message}}
+	</p>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+	<button mat-raised-button color="primary" (click)="onConfirmClick()" tabindex="1">{{confirmButtonText}}</button>
+	<button mat-raised-button mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+</mat-dialog-actions> -->
+
+
+<!-- Confirmation dialog for actions -->
+<div>
+  <h2 mat-dialog-title>Confirm Action</h2>
+  <div mat-dialog-content>
+    <p>{{ message}}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-stroked-button [mat-dialog-close]="false">{{ cancelButtonText }}</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">{{ confirmButtonText }}</button>
+  </div>
+</div>

@@ -1,0 +1,146 @@
+<!--<h6>Hello, {{name}}</h6>
+<h6> {{obj.fname}} </h6>
+<h6> {{getName().fname}} </h6>
+<h6> {{1+4}} </h6>-->
+<!--<app-user-list></app-user-list>-->
+
+<!--<h1> Component Tutorial </h1>
+<app-login [person]="data"></app-login>
+<app-sign-up (parentComponent)="parentComponent($event)"></app-sign-up>-->
+
+<!--<div *ngFor="let item from person">
+    <app-sign-up [person]="item"></app-sign-up>
+</div>-->
+
+<!--<input type="text" [disabled]="disabledBox" value="Arjun" />
+<button (click)="disableButton()"> enable </button> ?
+<h1>Form</h1>
+<form #demoForm="ngForm" (ngSubmit)="submitForm(demoForm.value)" class="demoForm">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input type="text" matInput ngModel placeholder="firstName" name="Firstname">
+    </mat-form-field>
+    <br><br>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input type="text" matInput ngModel placeholder="lastName" name="LastName" appearance="fill">
+    </mat-form-field>
+    <br><br>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput ngModel placeholder="password" name="Password" appearance="fill">
+    </mat-form-field>
+    <br><br>
+    <button mat-button color="primary">Submit</button>
+</form>
+
+<h1>Login Form</h1>
+    <form #demoForm="ngForm">
+        
+    </form>-->
+<!--
+<a routerLink='login'> Login </a>
+<br>
+<a routerLink='signup'> Sign Up</a>
+<br>
+<a routerLink='aboutus'> About Us</a>
+<router-outlet></router-outlet>-->
+
+<!--<h2>Normal Heading</h2>
+<h2>Cutom Heading1</h2>
+<h2 appCustomStyle>{{uname}}</h2>-->
+
+<!--<hr>-->
+<!--<h1>admin links</h1>
+<ul>
+    <li>
+        <a routerLink='admin/login'> login</a>
+    </li>
+    <li>
+        <a routerLink='admin/list'> list</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>-->
+
+<!--<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>User Id</td>
+    </tr>
+    <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.userId}}</td>
+    </tr>
+</table>-->
+
+<!--<h4>Admin links</h4>
+<ul>
+    <li>
+        <a routerLink='admin/login'> login</a>
+    </li>
+    <li>
+        <a routerLink='admin/list'> list</a>
+    </li>
+</ul>
+<h4>Guest links</h4>
+<ul>
+    <li>
+        <a routerLink='guest/login'> login</a>
+    </li>
+    <li>
+        <a routerLink='guest/list'> list</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>-->
+
+<!--Service api demo-->
+<hr>
+<h2 >Employee Details</h2>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let item of employees">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+</table>
+
+<hr>
+<h2 >Posts Details</h2>
+<table border="1">
+    <tr>
+        <td>User Id</td>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Body</td>
+    </tr>
+    <tr *ngFor="let item of posts">
+        <td>{{item.userId}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+    </tr>
+</table>
+<br><br><br><br>
+
+<!--
+<agm-map>
+    
+</agm-map>-->
+<!--<div class="abc">
+    <app-map></app-map>
+</div>-->
+
+
+<br>
+<button (click) ='postApi()'> Post Api</button>
+<br><br><br><br>
+
+<button (click) ='callApi()'> Post</button>
+

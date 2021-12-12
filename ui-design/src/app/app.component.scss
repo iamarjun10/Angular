@@ -1,0 +1,57 @@
+.mat-card-design {
+    margin: 100px
+}
+.mat-card-title-design {
+    align-items: center;
+    text-align: center;
+}
+.mat-card-actions-table {
+    padding: 20px !important;
+    align-items: center;    
+}
+.mat-table-design {
+    width: 100%;
+    
+}
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 0px;
+}
+.checkbox-container {
+    width: 50px;
+}
+.mat-card-actions {
+    align-items: center;
+    margin-bottom: 10px !important;
+}
+.mat-card-actions-div {
+    align-items: center;
+    text-align: center;
+}
+.mat-card-env-div {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.mat-button-style {
+    height: 40px;
+    align-items: center;
+    font-size: 18px;
+}
+.mat-refresh-button {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.mat-card-title {
+    margin-bottom: 0px;
+}
+mat-card>:first-child, .mat-card-content>:first-child {
+    margin-top: 10px !important;
+}
+.mat-raised-button.mat-primary {
+    color: #fff;
+    background-color: #3244ab;
+}
+.mat-flat-button.mat-primary {
+    color: #fff;
+    background-color: #3244ab;
+}
